@@ -25,6 +25,7 @@
   font-family: "Courier New", Courier, monospace;
   font-size: 19px;
   margin-top: 10%;
+  text-align: center;
 }
 .kainat {
   color: rgb(231, 65, 143);
@@ -34,6 +35,7 @@
 .name {
   color: white;
   font-size: 3.2rem;
+  text-align: center;
 }
 .dev {
   color: white;
@@ -49,6 +51,7 @@
   border-radius: 7px;
   width: 65%;
   height: 11vh;
+  margin-left: 15%;
 }
 .inp:focus {
   outline: none;
@@ -87,5 +90,17 @@
   text-align: center;
 }
 .and {
+  color: white;
+}
+
+.about-para {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+.html {
+  color: rgb(231, 65, 143);
+}
+.qoute {
   color: white;
 }
