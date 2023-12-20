@@ -14,26 +14,6 @@
   -webkit-background-clip: text;
   font-size: 60px;
 }
-
-body {
-  color: #ededed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  background: transparent;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  /* background: #252839; */
-  /* background: url(img/wallpaper.svg); */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-}
 /* nabarcss */
 .logo {
   position: relative;
@@ -53,36 +33,29 @@ body {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: #0ef;
+  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-.home {
-  position: relative;
-  width: 100%;
-  justify-content: space-between;
-  height: 100vh;
-  /* background: url(img/wallpaper.svg) no-repeat; */
-  background-size: cover;
-  background-position: center;
 
-  display: flex;
-  align-items: center;
+.hello {
+  margin-top: 40%;
+}
+.home-heading {
   color: white;
-  padding: 70px 10% 0;
 }
-
-.text {
+.home-name {
   position: relative;
-  font-size: 10vh;
-  -webkit-text-stroke: 0.1vw;
+  -webkit-text-stroke: 0.1w;
+  text-align: center;
 }
-.text::before {
+.home-name::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  /* color: #0ef; */
   background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -97,15 +70,22 @@ body {
   100% {
     width: 0;
   }
-
   70%,
   90% {
-    width: 105%;
+    width: 90%;
   }
 }
-/* .text {
-  background: linear-gradient(45deg, #0ef, rgb(0, 255, 170));
+.about {
+  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 60px;
-} */
+}
+.me {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.progress-bar {
+  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
+}
+.bar-per {
+  text-align: end;
+}
