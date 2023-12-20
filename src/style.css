@@ -1,106 +1,111 @@
 @font-face {
-  font-family: poppin;
+  font-family: poppins;
   src: url(./fonts/Agbalumo-Regular.ttf);
 }
 * {
-  font-family: poppin;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
 }
-.portfolio {
-  color: white;
-  padding-left: 20px;
-}
-.folio {
-  color: rgb(231, 65, 143);
-}
-.li:hover {
-  border-bottom: 5px solid rgb(231, 65, 143);
-}
-.li {
-  color: white;
-  padding-right: 12px;
-  transition: 1s;
-}
-.home-text {
-  color: rgb(231, 65, 143);
-  font-family: "Courier New", Courier, monospace;
-  font-size: 19px;
-  margin-top: 10%;
-  text-align: center;
-}
-.kainat {
-  color: rgb(231, 65, 143);
-  padding-right: 5%;
-  text-shadow: 2px 3px 5px white;
-}
-.name {
-  color: white;
-  font-size: 3.2rem;
-  text-align: center;
-}
-.dev {
-  color: white;
-  letter-spacing: 2px;
-}
-.pic {
-  margin-top: -50px;
-  width: 90%;
-  height: 70vh;
-}
-.for-mail {
-  background-color: white;
-  border-radius: 7px;
-  width: 65%;
-  height: 11vh;
-  margin-left: 15%;
-}
-.inp:focus {
-  outline: none;
-}
-.inp {
-  border: 5px;
-  border: none;
-}
-::placeholder {
-  color: gray;
-  font-family: poppin;
-}
-.lets {
-  background-color: rgb(231, 65, 143);
-  color: black;
-  border-radius: 10px;
-  padding: 3px 5px;
-  float: right;
-  margin: auto;
-  align-items: center;
-  margin-top: 9px;
-}
-.ashfaq {
-  color: white;
-  padding-right: 5%;
-  text-shadow: 2px 3px 5px rgb(231, 65, 143);
-}
-.about-me {
-  color: white;
-  text-align: center;
-  font-size: 75px;
-}
-.about-text {
-  color: rgb(231, 65, 143);
-  font-size: 20px;
-  text-align: center;
-}
-.and {
-  color: white;
+.port {
+  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 60px;
 }
 
-.about-para {
-  text-align: center;
-  text-transform: capitalize;
+body {
+  color: #ededed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  /* background: #252839; */
+  /* background: url(img/wallpaper.svg); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+/* nabarcss */
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #0ef;
+}
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  /* background: url(img/wallpaper.svg) no-repeat; */
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
   color: white;
+  padding: 70px 10% 0;
 }
-.html {
-  color: rgb(231, 65, 143);
+
+.text {
+  position: relative;
+  font-size: 10vh;
+  -webkit-text-stroke: 0.1vw;
 }
-.qoute {
-  color: white;
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  /* color: #0ef; */
+  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0vw;
+  border-right: 2px solid #0ef;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
 }
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 105%;
+  }
+}
+/* .text {
+  background: linear-gradient(45deg, #0ef, rgb(0, 255, 170));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 60px;
+} */
