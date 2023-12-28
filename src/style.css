@@ -45,36 +45,22 @@
   color: white;
 }
 .home-name {
-  position: relative;
-  -webkit-text-stroke: 0.1w;
-  text-align: center;
-}
-.home-name::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
-  -webkit-text-fill-color: transparent;
+  color: white;
+  font-family: poppins;
+  font-size: 50px;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 0vw;
-  border-right: 2px solid #0ef;
-  overflow: hidden;
-  animation: animate 5s linear infinite;
+  background-image: linear-gradient(
+    45deg,
+    rgb(211, 162, 0),
+    rgb(0, 255, 178),
+    rgb(211, 162, 0)
+  );
+  background-repeat: no-repeat;
+  background-position: -450px 0;
+  color: transparent;
+  animation: backcolor 5s linear infinite;
 }
-@keyframes animate {
-  0%,
-  10%,
-  100% {
-    width: 0;
-  }
-  70%,
-  90% {
-    width: 90%;
-  }
-}
+
 .hire {
   background: linear-gradient(
     45deg,
@@ -106,6 +92,7 @@
 }
 .progress-bar {
   background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
+  animation: leftside 4s ease-in-out backwards;
 }
 .bar-per {
   text-align: end;
@@ -115,4 +102,45 @@
 }
 .bar-name {
   font-size: 30px;
+}
+/* projectsection */
+
+.pro {
+  font-size: 50px;
+  margin: 4% 0px;
+}
+.img-div {
+  border-image: linear-gradient(45deg, rgb(211, 102, 0), rgb(0, 255, 170)) 30;
+  border-width: 7px;
+  border-style: solid;
+}
+.project-img {
+  width: 100%;
+  height: 30vh;
+}
+.geo {
+  font-size: 30px;
+}
+.html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pro-link {
+  text-decoration: none;
+  color: white;
+}
+/* ANIMATION SECTION */
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes leftside {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
