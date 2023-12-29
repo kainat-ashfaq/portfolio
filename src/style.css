@@ -75,6 +75,19 @@
   height: 7vh;
   border: none;
 }
+.me-div {
+  background: linear-gradient(45deg, rgb(211, 162, 0), rgb(0, 255, 170));
+  width: 65%;
+  height: 50vh;
+  border-radius: 50%;
+  margin-top: 27%;
+  overflow: hidden;
+}
+.me {
+  width: 65%;
+  height: 50vh;
+  /* overflow: hidden; */
+}
 /* aboutcss */
 .about {
   background: linear-gradient(
@@ -87,7 +100,7 @@
   font-size: 55px;
   padding-bottom: 100px;
 }
-.me {
+.para-1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 .progress-bar {
@@ -106,8 +119,15 @@
 /* projectsection */
 
 .pro {
-  font-size: 50px;
   margin: 4% 0px;
+  background: linear-gradient(
+    45deg,
+    rgb(211, 162, 0),
+    rgb(0, 255, 170) /* rgb(211, 162, 0) */
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 55px;
 }
 .img-div {
   border-image: linear-gradient(45deg, rgb(211, 102, 0), rgb(0, 255, 170)) 30;
@@ -128,6 +148,22 @@
   text-decoration: none;
   color: white;
 }
+.contact-me-heading {
+  background: linear-gradient(45deg, rgb(211, 102, 0), rgb(0, 255, 170));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0;
+  animation: slideright 0.5s ease forwards;
+  animation-delay: 1.6s; */
+}
+.contact-content {
+  color: white;
+  font-family: poppins;
+}
 /* ANIMATION SECTION */
 @keyframes backcolor {
   100% {
@@ -142,5 +178,10 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .me-div {
+    margin-left: 11%;
   }
 }
